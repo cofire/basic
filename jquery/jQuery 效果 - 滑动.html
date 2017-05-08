@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<title></title> 
+	<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>
+		// slideDown()
+		// slideUp()
+		// slideToggle()
+		$(document).ready(function(){
+			$("#flip1").click(function(){
+				$("#panel").slideDown("slow");
+			});
+		});
+		$(document).ready(function(){
+			$("#flip2").click(function(){
+				$("#panel").slideUp("slow");
+			});
+		});
+		$(document).ready(function(){
+			$("#flip3").click(function(){
+				$("#panel").slideToggle("slow");
+			});
+		});
+	</script>
+	<style type="text/css"> 
+		#panel,#flip1,#flip2,#flip3
+		{
+			padding:5px;
+			text-align:center;
+			background-color:#e5eecc;
+			border:solid 1px #c3c3c3;
+		}
+		#panel
+		{
+			padding:50px;
+			display:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="flip1">点我滑下面板</div>
+	<div id="panel">Hello world!</div>
+	<div id="flip2">点我拉起面板</div>
+	<div id="flip3">显示或隐藏</div>
+</body>
+</html>
