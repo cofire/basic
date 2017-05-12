@@ -29,3 +29,7 @@ ALTER TABLE testalter_tbl MODIFY c CHAR(10);
 
 -- 添加一列或删除一列 add/drop
 ALTER TABLE testalter_tbl ADD i INT;
+
+-- 修改默认值
+ALTER TABLE Persons;
+ALTER City SET DEFAULT 'SANDNES';
