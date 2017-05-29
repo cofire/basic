@@ -9,8 +9,8 @@ public class CatAndDogDemo {
       c.work();        // 调用的是 Cat 的 catchMouse
   }  
             
-    public static void show(Animal a)  {
-      a.eat();  
+    public static void show(Animal a) {
+        a.eat();  
         // 类型判断
         if (a instanceof Cat)  {  // 猫做的事情 
             Cat c = (Cat)a;  
